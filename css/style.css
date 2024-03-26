@@ -1,0 +1,156 @@
+@import url(form.css);
+@import url(recipe.css);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+body{
+    background: url("../images/2.jpeg");
+    background-size:cover;
+    background-repeat: no-repeat;    
+}
+
+/* Navigation Bar */
+
+nav {
+    height: 75px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-image: linear-gradient(to bottom right, rgb(219, 207, 207) 2% , rgb(255, 193, 9) );
+    box-shadow: 5px 2px 10px #3e3e3d;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+nav ol {
+    height: 75px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+}
+
+.nav a {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 550;
+    line-height: 1.4;
+    text-decoration: none;
+    margin: 10px;
+    padding: 10px;
+    color: black;
+    transition: 0.5s;
+}
+
+.nav a:hover {
+    color: white;
+    text-shadow: 2px 2px rgba(255, 153, 0, 0.689);
+}
+/* Welcome */
+.welcome {
+    margin-top: 75px;
+    background-color:rgba(52, 51, 51, 0.495);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 90vh;
+}
+.welcome h1{
+font-family:"Poppins", sans-serif;
+font-weight: bolder;
+text-shadow: 2px 2px rgba(255, 153, 0, 0.689);
+color: rgb(255, 255, 255);
+font-size: 100px;
+padding: 50px;
+}
+.welcome img{
+height: 400px;
+width: 400px;
+margin-right: 50px;
+mix-blend-mode:color-burn;
+}
+
+/* View Food */
+.viewfood {
+    
+    background-color:rgba(52, 51, 51, 0.495);
+    height: 90vh;
+}
+.viewfood h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 100px;
+    font-weight: bolder;
+    text-align: center;
+    color: rgb(255, 255, 255);
+     
+}
+.container{
+    padding: 10px;
+    margin: 20px;
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.container div{
+    box-shadow: 2px 2px 5px 2px rgba(157, 156, 155, 0.82);
+    background: rgba(223, 234, 236, 0.795);
+    border-radius: 10px;
+    height: 200px;
+    width: 200px;
+margin: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: 0.5s;
+   
+}
+.container div:hover{
+    box-shadow: 2px 2px 5px 2px rgba(255, 193, 9, 0.715) ;
+    z-index: 50;
+   transform: scale(1.2) ;
+    transition: 0.5s;
+    position:static;
+}
+
+.container .container1{
+ background-image: url("https://www.hipmamasplace.com/wp-content/uploads/2022/06/No-Churn-Strawberry-Ice-Cream-24-scaled.jpg");
+ background-size: cover;
+}
+.container .container2{
+    background-image: url("https://www.licious.in/blog/wp-content/uploads/2020/12/Hyderabadi-chicken-Biryani.jpg");
+    background-size: cover;
+   }
+   .container .container3{
+    background-image: url("https://www.sharmispassions.com/wp-content/uploads/2019/06/RagiMudde4-475x500.jpg");
+    background-size: cover;
+   }
+   .container .container4{
+    background-image: url("https://www.southernliving.com/thmb/UW4kKKL-_M3WgP7pkL6Pb6lwcgM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Ham_Sandwich_011-1-49227336bc074513aaf8fdbde440eafe.jpg");
+    background-size: cover;
+   }
+   .container .container5{
+    background-image: url("https://www.palatesdesire.com/wp-content/uploads/2022/03/virgin-mojito-recipe@palate-desire-2.jpg");
+    background-size: cover;
+   }
+
+   /* Footer */
+   footer{
+    background-color: black;
+    padding: 20px;
+    box-shadow: 2px 2px 10px 3px rgba(255, 193, 9, 0.715) ;
+   }
+   footer h1{
+    color: white;
+    text-align: center;
+   }
